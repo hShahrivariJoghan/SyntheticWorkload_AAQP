@@ -1,0 +1,6 @@
+In this session, the tuner must realize to generate universe sample of s in order to reuse it for answering following queries
+
+select count(*) as count from  specobj s where s.survey>0
+select count(*) as count from  specobj s where s.survey>0
+select count(*) as count from galaxy p, specobj s where p.objid=s.bestobjid  and  s.survey>0
+select count(*) as count from galaxy p, specobj s where p.objid=s.bestobjid  and  s.survey>0
