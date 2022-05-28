@@ -1,0 +1,9 @@
+In this session, the tuner must realize to make sample of s join n so that the engine can reuse the sample to execute following queries: 
+
+select count(*) from galaxy p, specobj s, photoobj n where p.objid=s.bestobjid and p.objid=n.objid and s.bestobjid=n.objid and s.snmedian>0 and p.u>18
+select count(*) from star p, specobj s, photoobj n where p.objid=s.bestobjid and p.objid=n.objid and s.bestobjid=n.objid and s.snmedian>0 and p.dered_u>7 and p.u>18
+select count(*) from star p, specobj s, photoobj n where p.objid=s.bestobjid and p.objid=n.objid and s.bestobjid=n.objid and s.snmedian>0 and p.dered_u>7 and p.u>18
+select count(*) from star p, specobj s, photoobj n where p.objid=s.bestobjid and p.objid=n.objid and s.bestobjid=n.objid  and s.snmedian>0 and p.dered_u>7 and p.u>18
+select count(*) from star p, specobj s, photoobj n where p.objid=s.bestobjid and p.objid=n.objid and s.bestobjid=n.objid and s.snmedian>0 and p.dered_u>7 and p.u>18
+select count(*) from star p, specobj s, photoobj n where p.objid=s.bestobjid and p.objid=n.objid and s.bestobjid=n.objid and s.snmedian>0 and p.dered_u>7 and p.u>18
+select count(*) from star p, specobj s, photoobj n where p.objid=s.bestobjid and p.objid=n.objid and s.bestobjid=n.objid and s.snmedian>0 and p.dered_u>7 and p.u>18
