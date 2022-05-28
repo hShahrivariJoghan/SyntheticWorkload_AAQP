@@ -1,0 +1,17 @@
+In this session, the tuner must first sample s, p, and n (reuse them to answer begining queries) then the tuner must sample join of two tables (to answer later queries)  
+
+select count(*) from galaxy p, specobj s where p.objid=s.bestobjid 
+select count(*) from galaxy p, specobj s where p.objid=s.bestobjid 
+select count(*) from galaxy p, specobj s where p.objid=s.bestobjid  and s.zwarning = 0
+select count(*) from galaxy p, specobj s where p.objid=s.bestobjid  and s.zwarning = 0
+select count(*) from specobj s, photoobj n where  s.bestobjid=n.objid 
+select count(*) from specobj s, photoobj n where  s.bestobjid=n.objid 
+select count(*) from specobj s, photoobj n where  s.bestobjid=n.objid and s.zwarning = 0
+select count(*) from specobj s, photoobj n where  s.bestobjid=n.objid and s.zwarning = 0
+select count(*) from galaxy p, specobj s, photoobj n where p.objid=s.bestobjid and p.objid=n.objid and s.bestobjid=n.objid and s.zwarning = 0
+select count(*) from galaxy p, specobj s, photoobj n where p.objid=s.bestobjid and p.objid=n.objid and s.bestobjid=n.objid and s.zwarning = 0
+select count(*) from galaxy p, specobj s, photoobj n where p.objid=s.bestobjid and p.objid=n.objid and s.bestobjid=n.objid and (s.class = 'galaxy') and s.zwarning=0
+select count(*) from galaxy p, specobj s, photoobj n where p.objid=s.bestobjid and p.objid=n.objid and s.bestobjid=n.objid and (s.class = 'galaxy') and s.zwarning=0
+select count(*) as count from galaxy p, specobj s, photoobj n where p.objid=s.bestobjid and p.objid=n.objid and s.bestobjid=n.objid
+select count(*) as count from galaxy p, specobj s, photoobj n where p.objid=s.bestobjid and p.objid=n.objid and s.bestobjid=n.objid
+select count(*) as count from galaxy p, specobj s, photoobj n where p.objid=s.bestobjid and p.objid=n.objid and s.bestobjid=n.objid and p.r < 16 
