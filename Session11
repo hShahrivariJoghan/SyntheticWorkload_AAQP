@@ -1,0 +1,10 @@
+In this session, the tuner must sample p join n and avoid sampling p since the engine can reduce the total execution cost of the entire session (p join n is more popular in later queries)
+
+select count(*) as count from galaxy p, specobj s, photoobj n where p.objid=s.bestobjid and p.objid=n.objid and s.bestobjid=n.objid and p.dered_f>0
+select count(*) from star p where  p.dered_f>0
+select count(*) from star p, photoobj n where  p.objid=n.objid  and  p.dered_f>0
+select count(*) from star p, photoobj n where  p.objid=n.objid and p.dered_f>0
+select count(*) from star p,  photoobj n where p.objid=n.objid  and p.dered_f>0
+select count(*) from star p,  photoobj n where p.objid=n.objid  and p.dered_f>0
+select count(*) from star p, photoobj n where  p.objid=n.objid and p.dered_f>0
+select count(*) from star p,  photoobj n where p.objid=n.objid  and p.dered_f>0
