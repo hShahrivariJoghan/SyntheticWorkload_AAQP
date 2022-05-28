@@ -1,0 +1,10 @@
+In this session, the tuner must realize to include extra columns in sample of photoobjall to reuse the sample for answering the following queries
+
+select count(*) as count from  photoobjall s where s.ra between 0 and 3
+select count(*) as count from  photoobjall s where s.rerun > 0
+select count(*) as count from  photoobjall s where s.clean>0
+select count(*) as count from  photoobjall s where s.field >10 and s.rerun = 0
+select count(*) as count from  photoobjall s where s.field >10 and s.run = 0
+select count(*) as count from  photoobjall s where s.type >10 and s.rerun = 0
+select count(*) as count from  photoobjall s where s.field >10 and s.psfmag_u = 0
+select count(*) as count from  photoobjall s where s.dec >10 and s.rerun = 0
