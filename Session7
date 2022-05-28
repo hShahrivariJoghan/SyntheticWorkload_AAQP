@@ -1,0 +1,15 @@
+In this session, the tuner must realize to remove sample of photoprimary to open space for sampling star
+
+select count(*) as count from  photoprimary p where b>0
+select count(*) as count from  photoprimary p where b>0 
+select count(*) as count from  photoprimary p  where b>0 
+select count(*) as count from  photoprimary p  where b>0
+select count(*) as count from  photoprimary p  where b>0
+select count(*) as count from  star p  where b>0
+select count(*) as count from  star p  where b>0
+select count(*) as count from  star p  where b>0
+select count(*) as count from  star p  where b>0
+select count(*) as count from  star p  where b>0
+select count(*) as count from  star p  where b>0
+select count(*) as count from  star p  where b>0
+select count(*) as count from  star p  where b>0
