@@ -1,0 +1,9 @@
+In this session, the tuner must realize to sample n,s, and p separately in order to reuse them for answering following queries
+
+select count(*) as count from galaxy p, specobj s, photoobj n where p.objid=s.bestobjid and p.objid=n.objid and s.bestobjid=n.objid and p.camcol>0 and n.fracdev_z>0
+select count(*) from star p, photoobj n where  p.objid=n.objid  and n.fracdev_z>0 and p.dered_r>0
+select count(*) from star p, photoobj n where  p.objid=n.objid and n.fracdev_z>0 and p.dered_r>0
+select count(*) from star p,  photoobj n where p.objid=n.objid  and n.fracdev_z>0 and p.dered_r>0
+select count(*) from star p,  photoobj n where p.objid=n.objid  and n.fracdev_z>0 and p.dered_r>0
+select count(*) from star p, photoobj n where  p.objid=n.objid and n.fracdev_z>0 and p.dered_r>0
+select count(*) from star p,  photoobj n where p.objid=n.objid  and n.fracdev_z>0 and p.dered_r>0
