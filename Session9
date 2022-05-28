@@ -1,0 +1,10 @@
+In this session, the tuner must realize to sample extra columns of s in order to reuse the sample to answer the following queries
+
+select count(*) as count from photoobjall s join specphotoall p on s.specobjid=p.specobjid where s.ra between 0 and 3
+select count(*) as count from photoobjall s join specphotoall p on s.specobjid=p.specobjid where s.rerun > 0
+select count(*) as count from photoobjall s join specphotoall p on s.specobjid=p.specobjid where s.clean>0
+select count(*) as count from photoobjall s join specphotoall p on s.specobjid=p.specobjid where s.field >10 and s.rerun = 0
+select count(*) as count from photoobjall s join specphotoall p on s.specobjid=p.specobjid where s.field >10 and s.run = 0
+select count(*) as count from photoobjall s join specphotoall p on s.specobjid=p.specobjid where s.type >10 and s.rerun = 0
+select count(*) as count from photoobjall s join specphotoall p on s.specobjid=p.specobjid where s.field >10 and s.psfmag_u = 0
+select count(*) as count from photoobjall s join specphotoall p on s.specobjid=p.specobjid where s.dec >10 and s.rerun = 0
