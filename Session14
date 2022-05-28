@@ -1,0 +1,8 @@
+In this session, the tuner must realize to generate distinct sample of p to reuse the sample for answering the following queries
+
+select count(*) from star p
+select count(*) from star p 
+select count(*) from star p
+select count(*), run from star p group by run 
+select count(*), run from star p group by run 
+select count(*), run from star p group by run
