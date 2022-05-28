@@ -1,0 +1,6 @@
+In this session, the tuner must realize to sample s instead of samplin s join p since sample of s could be reuse to answer most of the following queries
+
+select count(*) as count from  photoz p, galaxytag g, star s where p.objid=g.objid and p.objid=s.objid  and p.zerr>10 and s.extinction_r>8
+select count(*) as count from  photoz p,  star s where  p.objid=s.objid  and p.zerr>10 and s.extinction_r>8
+select count(*) as count from  photoz p where   p.zerr>10 
+select count(*) as count from  photoz p where   p.zerr>10 
